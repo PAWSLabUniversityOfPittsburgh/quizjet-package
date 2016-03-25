@@ -1,0 +1,8 @@
+*.DS_Store*
+_windows
+IntelliLang.xml
+acos-server/node_modules/*
+!acos-server/node_modules/acos*
+acos-server/node_modules/acos*/node_modules/*
+*npm-debug.log*
+acos-server/logs/*

@@ -1,0 +1,56 @@
+body {
+  padding: 15px;
+  font: 14px "Open Sans", Helvetica, Arial, sans-serif;
+  background-color: #ffffff;
+}
+
+div.contentPackage {
+  /*float: left;*/
+  width: 250px;
+  display: block;
+  font-size: 11px;
+  margin: 5px;
+  padding: 0 0 0 0;
+  border: 1px;
+  background-color: #337ab7;
+  border-radius: 15px 15px 15px 15px;
+  -moz-border-radius: 15px 15px 15px 15px;
+  -webkit-border-radius: 15px 15px 15px 15px;
+
+}
+
+div.contentPackageMain {
+  background-color: #EEE;
+  display: block;
+  min-height: 50px;
+  padding: 5px;
+}
+div.contentPackage ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;  
+  margin-left: 5px;
+} 
+
+h3.packageTitle {
+  font-size: 14px;
+  width: 90%;
+  padding: 5px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+div.allContent {
+  display: none;
+  padding: 0px;
+}
+
+a.toggleContent {
+  float: right;
+}
+
+
+
+.js-showContent {
+  margin-top: 5px;
+}

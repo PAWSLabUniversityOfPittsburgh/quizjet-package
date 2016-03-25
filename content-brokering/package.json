@@ -1,0 +1,38 @@
+{
+  "name": "acos-server",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "find ./test -name '*-test.js' | xargs mocha -R spec"
+  },
+  "dependencies": {
+    "body-parser": "~1.10.2",
+    "bootstrap": "^3.3.2",
+    "colors": "^1.0.3",
+    "compression": "^1.4.0",
+    "cookie-parser": "~1.3.3",
+    "debug": "~2.1.1",
+    "express": "~4.11.1",
+    "htmlencode": "0.0.4",
+    "morgan": "~1.5.1",
+    "nunjucks": "^1.2.0",
+    "serve-favicon": "~2.2.0"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.11.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "mocha": "^2.3.0",
+    "zombie": "^4.0.8"
+  },
+  "peerDependencies": {
+    "acos-jsvee": "0.0.1",
+    "acos-jsvee-python": "0.0.1",
+    "acos-jsvee-python-json": "0.0.1",
+    "acos-jsvee-java": "0.0.1",
+    "acos-html": "0.0.1",
+    "acos-pitt": "0.0.1",
+    "acos-python-parser": "0.0.1"
+  }
+}

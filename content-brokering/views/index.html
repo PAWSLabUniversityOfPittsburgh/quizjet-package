@@ -1,0 +1,51 @@
+﻿{% extends "base.html" %}
+
+{% block content %}
+<div><h4>Python Examples</h4>
+    {% for contentPackage in contentPackages %}
+    {% for ex in contentPackage.title2 %}
+
+
+    <div class="contentPackage col-md-4">
+        <h5 style="font-size: 15px;padding-left: 3px" class="packageTitle bg-primary">{{ ex }}
+            <a href="javascript:void(0)" class="easyui-link" onclick="javascript:$('#pane'+'{{loop.index}}').panel('open')"> [Open </a>
+            <a href="javascript:void(0)" class="easyui-link" onclick="javascript:$('#pane'+'{{loop.index}}').panel('close')"> Close] </a>
+        </h5>
+
+        <div id="pane{{ loop.index }}"  closed="true" openAnimation="slide" closeAnimation="slide" class="easyui-panel" title="{{ ex['topic_name'] }}" style="padding:2px;">
+
+            <div class="contentPackageMain">
+                <div class="teaserContent">
+                    <ol>
+                        {% for ey in contentPackage.meta2[ex] %}
+                        <li>
+                            <div id="dlg{{loop.index}}" closed="true" class="easyui-window" title="{{ ex }}" data-options="iconCls:'icon-save'" style="width:850px;height:500px;padding:10px">
+                                <div class="easyui-tabs" style="width:100%;height:430px">
+                                    <div title="Annotated Example" style="padding:5px;font-size:15px">
+                                        <iframe src="/html/{{ contentPackage.contentTypeNamespace }}/{{ contentPackage.namespace }}/{{ey|replace('.','')}}" height="100%" width="100%"></iframe>
+                                    </div>
+                                    <div title="Example Practice" style="padding:5px;font-size:15px">
+                                        <iframe height="400px" width="100%" src="http://www.zseries.in/python/example1.html"></iframe>
+                                    </div>
+                                    <div title="Transcripts" style="padding:5px;font-size:15px">
+                                        <p><b>input([prompt])</b> This function does not catch user errors. If the input is not syntactically valid, a SyntaxError will be raised. Other exceptions may be raised if there is an error during evaluation. If the readline module was loaded, then input() will use it to provide elaborate line editing and history features. Consider using the raw_input() function for general input from users.</p>
+                                    </div>
+                                    <div title="Video" style="padding:5px;font-size:15px">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ArL54Nmx9oU" frameborder="0" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <a id="{{loop.index}}" href="javascript:void(0)" class="easyui-link" onclick="javascript:$('#dlg'+'{{loop.index}}').dialog('open')">
+                                <h5>{{ey}}</h5>
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+    {% endfor %}
+</div>
+{% endblock %}

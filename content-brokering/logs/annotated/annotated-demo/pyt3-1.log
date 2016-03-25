@@ -1,0 +1,9 @@
+2016-02-07T23:41:18.107Z {"exampleId":"pyt3.1","type":"open","line":"1"} {"usr":"me","grp":"001","sid":"001","example-id":"pyt3.1","app":"3"}
+2016-02-08T00:14:52.329Z {"exampleId":"pyt3.1","type":"open","line":"1"} {"usr":"me","grp":"001","sid":"001","example-id":"pyt3.1","app":"3"}
+2016-02-08T00:21:47.580Z {"exampleId":"pyt3.1","type":"open","line":"1"} {"usr":"me","grp":"001","sid":"001","act":"pyt3.1","app":"3"}
+2016-02-08T00:26:38.558Z {"exampleId":"pyt3.1","type":"open","line":"1"} {"usr":"me","grp":"001","sid":"001","act":"pyt3.1","app":"3"}
+2016-02-08T00:27:16.691Z {"exampleId":"pyt3.1","type":"open","line":"3"} {"usr":"me","grp":"001","sid":"001","act":"pyt3.1","app":"3"}
+2016-02-08T00:39:27.905Z {"exampleId":"pyt3.1","type":"open","line":"1"} {"usr":"me","grp":"001","sid":"001","act":"pyt3.1","app":"3"}
+2016-02-08T00:39:33.065Z {"exampleId":"pyt3.1","type":"open","line":"1"} {"usr":"me","grp":"001","sid":"001","act":"pyt3.1","app":"3"}
+2016-02-08T01:06:15.339Z {"exampleId":"pyt3.1","type":"open","line":"4"} {"usr":"me","grp":"001","sid":"001","act":"pyt3.1","app":"3"}
+2016-02-08T01:21:38.114Z {"exampleId":"pyt3.1","type":"open","line":"1"} {"usr":"me","grp":"001","sid":"001","act":"pyt3.1","app":"3"}
