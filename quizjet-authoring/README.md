@@ -1,5 +1,5 @@
 # quizjet
-How to run it?
+How to run this project?
 
 (1)Import the database using the sql file "webex21.sql" in the "db file" folder(If the database doesn't exist.).
 
